@@ -2,6 +2,26 @@ version: "2.0"
 
 stories:
 
+- story: search hospital happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_provider{"facility_type":"hospital","location":"Pune"}
+  - action: action_facility_search
+  - intent: thanks
+  - action: utter_goodbye
+
+- story: search hospital + location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: earch_provider{"facility_type":"hospital"}
+  - utter_ask_location
+  - intent: inform{"location":"Pune"}
+  - action: action_facility_search
+  - intent: thanks
+  - action: utter_goodbye 
+
 - story: happy path
   steps:
   - intent: greet
