@@ -1,0 +1,112 @@
+--- 
+nlu: 
+  - 
+    examples: |
+        - hey
+        - hello
+        - hi
+        - hello there
+        - good morning
+        - good evening
+        - moin
+        - hey there
+        - let's go
+        - hey dude
+        - goodmorning
+        - goodevening
+        - good afternoon
+    intent: greet
+  - 
+    examples: |
+        - good afternoon
+        - cu
+        - good by
+        - cee you later
+        - good night
+        - bye
+        - goodbye
+        - have a nice day
+        - see you around
+        - bye bye
+        - see you later
+    intent: goodbye
+  - 
+    examples: |
+        - yes
+        - y
+        - indeed
+        - of course
+        - that sounds good
+        - correct
+    intent: affirm
+  - 
+    examples: |
+        - [Mumbai](location)
+        - [Pune](location)
+        - [Kolhapur](location)
+        - [Nashik](location)
+        - [Nagpur](location)
+        - [Jalgaon](location)
+        - [Satara](location)
+    intent: inform
+  - 
+    examples: |
+        - I need a [hospital](facility_type)
+        - find me nearby [hospital](facility_type)
+        - show me some [home hospital agencies](facility_type)
+        - [hospital](facility_type)
+        - Find me nearby [hospital](facility_type) in [Munmbai](location)
+        - I need a [home health agency](facility_type)
+    intent: search_provider
+  - 
+    examples: |
+        - no
+        - n
+        - never
+        - I don't think so
+        - don't like that
+        - no way
+        - not really
+    intent: deny
+  - 
+    examples: |
+        - perfect
+        - great
+        - amazing
+        - feeling like a king
+        - wonderful
+        - I am feeling very good
+        - I am great
+        - I am amazing
+        - I am going to save the world
+        - super stoked
+        - extremely good
+        - so so perfect
+        - so good
+        - so perfect
+    intent: mood_great
+  - 
+    examples: |
+        - my day was horrible
+        - I am sad
+        - I don't feel very well
+        - I am disappointed
+        - super sad
+        - I'm so sad
+        - sad
+        - very sad
+        - unhappy
+        - not good
+        - not very good
+        - extremly sad
+        - so saad
+        - so sad
+    intent: mood_unhappy
+  - 
+    examples: |
+        - are you a bot?
+        - are you a human?
+        - am I talking to a bot?
+        - am I talking to a human?
+    intent: bot_challenge
+version: "2.0"
